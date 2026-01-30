@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>LOGIN PAGE</h1>
+
+<form method="POST">
+
+Email:<br>
+<input name="email"><br><br>
+
+Password:<br>
+<input type="password" name="password"><br><br>
+
+<button>Login</button>
+
+</form>
+
+<a href="/signup">Signup</a>
+
+{% for msg in get_flashed_messages() %}
+<p style="color:red">{{ msg }}</p>
+{% endfor %}
+
+</body>
+</html>
